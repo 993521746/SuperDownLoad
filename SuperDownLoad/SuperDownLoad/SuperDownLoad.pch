@@ -1,0 +1,93 @@
+//
+//  SuperDownLoad.pch
+//  SuperDownLoad
+//
+//  Created by ZHANGHAI SHENG on 16/5/13.
+//  Copyright © 2016年 ZHANGHAI SHENG. All rights reserved.
+//
+
+#ifndef SuperDownLoad_pch
+#define SuperDownLoad_pch
+
+//公用头文件
+#import "NSString+HomeDir.h"
+#import "MJExtension.h"
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+#import "RESideMenu.h"
+
+
+//自定义log
+#ifdef DEBUG
+#define SHLog(...) NSLog(__VA_ARGS__)
+#else
+#define SHLog(...)
+#endif
+
+
+//通知
+#define EnterHome @"enter"
+
+//主控制器SideMenuViewCtr
+#define SideMenuViewCtr (RESideMenu *)[UIApplication sharedApplication].keyWindow.rootViewController
+
+
+//view的fram
+
+#define viewFramHeight self.view.frame.size.height
+#define viewFrameWigh self.view.frame.size.wigh
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+/*               ********** 判断系统版本*********               */
+
+#define IOS9 [[[UIDevice currentDevice] systemVersion]floatValue]>=9
+#define IOS8 [[[UIDevice currentDevice] systemVersion]floatValue]>=8
+#define IOS7 [[[UIDevice currentDevice] systemVersion]floatValue]>=7
+
+
+/*               ********** 判断系统版本*********               */
+
+// 像素转换
+#define kFONT_SIZE_FROM_PX_VALUE(pxValue) ((pxValue+3.0f)*0.5f)
+
+//获取屏幕宽度
+#define ScreenWide [UIScreen mainScreen].bounds.size.width
+//获取屏幕高度
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//颜色
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+
+
+
+// 判断是否为ios7
+#define isiOS7 ([[[UIDevice currentDevice]systemVersion]floatValue]>=7.0)
+#define isBigIos7  ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0)
+
+#if __IPHONE_8_0 && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+#define IS_IOS8_OR_GREATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#else
+#define IS_IOS8_OR_GREATER (NO)
+#endif
+
+// 判断是否为iphone5
+#define isIPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+// 判断是否无ipad
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+
+
+#define ipadWidth [UIScreen mainScreen].bounds.size.width==768
+/**  *  1 判断是否为3.5inch      320*480  */
+#define ONESCREEN ([UIScreen mainScreen].bounds.size.height == 480)
+/**  *  2 判断是否为4inch        640*1136  */
+#define TWOSCREEN ([UIScreen mainScreen].bounds.size.height == 568)
+/**  *  3 判断是否为4.7inch   375*667   750*1334  */
+#define THREESCREEN ([UIScreen mainScreen].bounds.size.height == 667)
+/**  *  4 判断是否为5.5inch   414*1104   1242*2208  */
+#define FOURSCREEN ([UIScreen mainScreen].bounds.size.height == 1104)
+
+
+#endif /* SuperDownLoad_pch */

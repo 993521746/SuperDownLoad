@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EFA1A85B010B8144B41B132 /* libPods-SuperDownLoad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E05724AD5CA23AECE01A3E4 /* libPods-SuperDownLoad.a */; };
+		B10792FB1CE801DD00E0F1F8 /* EncryptionTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B10792F01CE801DD00E0F1F8 /* EncryptionTools.m */; };
+		B10792FC1CE801DD00E0F1F8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B10792F21CE801DD00E0F1F8 /* NSString+Hash.m */; };
+		B10792FD1CE801DD00E0F1F8 /* RSACryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B10792F41CE801DD00E0F1F8 /* RSACryptor.m */; };
+		B10792FE1CE801DD00E0F1F8 /* NSString+HomeDir.m in Sources */ = {isa = PBXBuildFile; fileRef = B10792F71CE801DD00E0F1F8 /* NSString+HomeDir.m */; };
+		B10792FF1CE801DD00E0F1F8 /* SHSuperDownLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = B10792FA1CE801DD00E0F1F8 /* SHSuperDownLoad.m */; };
+		B10793091CE805C100E0F1F8 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10793031CE805C100E0F1F8 /* NewViewController.m */; };
+		B107930A1CE805C100E0F1F8 /* PageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B10793071CE805C100E0F1F8 /* PageCollectionViewCell.m */; };
+		B107930B1CE805C100E0F1F8 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10793081CE805C100E0F1F8 /* PageCollectionViewCell.xib */; };
+		B107930D1CE8083300E0F1F8 /* errcode.plist in Resources */ = {isa = PBXBuildFile; fileRef = B107930C1CE8083300E0F1F8 /* errcode.plist */; };
+		B107930F1CE8090800E0F1F8 /* loadFailPage.html in Resources */ = {isa = PBXBuildFile; fileRef = B107930E1CE8090800E0F1F8 /* loadFailPage.html */; };
+		B10793141CE80B5D00E0F1F8 /* download-complete.wav in Resources */ = {isa = PBXBuildFile; fileRef = B10793131CE80B5D00E0F1F8 /* download-complete.wav */; };
+		B10793161CE8106A00E0F1F8 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10793151CE8106A00E0F1F8 /* Asset.xcassets */; };
+		B107931A1CE81CFD00E0F1F8 /* SHLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10793181CE81CFD00E0F1F8 /* SHLeftViewController.m */; };
+		B107931B1CE81CFD00E0F1F8 /* SHLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10793191CE81CFD00E0F1F8 /* SHLeftViewController.xib */; };
+		B107931F1CE870C800E0F1F8 /* SHRightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B107931D1CE870C800E0F1F8 /* SHRightViewController.m */; };
+		B10793201CE870C800E0F1F8 /* SHRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B107931E1CE870C800E0F1F8 /* SHRightViewController.xib */; };
+		B1E0E6081CEB6E3A0094E9B5 /* SHHomeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1E0E6061CEB6E3A0094E9B5 /* SHHomeCollectionViewController.m */; };
+		B1E0E6091CEB6E3A0094E9B5 /* SHHomeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1E0E6071CEB6E3A0094E9B5 /* SHHomeCollectionViewController.xib */; };
+		B1F7880A1CE5AC2500C11097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F788091CE5AC2500C11097 /* main.m */; };
+		B1F7880D1CE5AC2500C11097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F7880C1CE5AC2500C11097 /* AppDelegate.m */; };
+		B1F788161CE5AC2500C11097 /* SuperDownLoad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B1F788141CE5AC2500C11097 /* SuperDownLoad.xcdatamodeld */; };
+		B1F788261CE5AC2500C11097 /* SuperDownLoadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F788251CE5AC2500C11097 /* SuperDownLoadTests.m */; };
+		B1F788311CE5AC2500C11097 /* SuperDownLoadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F788301CE5AC2500C11097 /* SuperDownLoadUITests.m */; };
+		B1F789021CE6132700C11097 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F789011CE6132700C11097 /* libz.1.2.5.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1F788221CE5AC2500C11097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1F787FD1CE5AC2500C11097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1F788041CE5AC2500C11097;
+			remoteInfo = SuperDownLoad;
+		};
+		B1F7882D1CE5AC2500C11097 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1F787FD1CE5AC2500C11097 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1F788041CE5AC2500C11097;
+			remoteInfo = SuperDownLoad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28DC8B1C76F16CD5C0F2CAC5 /* Pods-SuperDownLoad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDownLoad.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperDownLoad/Pods-SuperDownLoad.release.xcconfig"; sourceTree = "<group>"; };
+		5E05724AD5CA23AECE01A3E4 /* libPods-SuperDownLoad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SuperDownLoad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10792EF1CE801DD00E0F1F8 /* EncryptionTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionTools.h; sourceTree = "<group>"; };
+		B10792F01CE801DD00E0F1F8 /* EncryptionTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionTools.m; sourceTree = "<group>"; };
+		B10792F11CE801DD00E0F1F8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		B10792F21CE801DD00E0F1F8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		B10792F31CE801DD00E0F1F8 /* RSACryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSACryptor.h; sourceTree = "<group>"; };
+		B10792F41CE801DD00E0F1F8 /* RSACryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSACryptor.m; sourceTree = "<group>"; };
+		B10792F61CE801DD00E0F1F8 /* NSString+HomeDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HomeDir.h"; sourceTree = "<group>"; };
+		B10792F71CE801DD00E0F1F8 /* NSString+HomeDir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HomeDir.m"; sourceTree = "<group>"; };
+		B10792F91CE801DD00E0F1F8 /* SHSuperDownLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHSuperDownLoad.h; sourceTree = "<group>"; };
+		B10792FA1CE801DD00E0F1F8 /* SHSuperDownLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHSuperDownLoad.m; sourceTree = "<group>"; };
+		B10793021CE805C100E0F1F8 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		B10793031CE805C100E0F1F8 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
+		B10793061CE805C100E0F1F8 /* PageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCollectionViewCell.h; sourceTree = "<group>"; };
+		B10793071CE805C100E0F1F8 /* PageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCollectionViewCell.m; sourceTree = "<group>"; };
+		B10793081CE805C100E0F1F8 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B107930C1CE8083300E0F1F8 /* errcode.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = errcode.plist; sourceTree = "<group>"; };
+		B107930E1CE8090800E0F1F8 /* loadFailPage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = loadFailPage.html; sourceTree = "<group>"; };
+		B10793121CE80A4A00E0F1F8 /* photoShutter.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = photoShutter.caf; sourceTree = "<group>"; };
+		B10793131CE80B5D00E0F1F8 /* download-complete.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "download-complete.wav"; sourceTree = "<group>"; };
+		B10793151CE8106A00E0F1F8 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
+		B10793171CE81CFD00E0F1F8 /* SHLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHLeftViewController.h; sourceTree = "<group>"; };
+		B10793181CE81CFD00E0F1F8 /* SHLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHLeftViewController.m; sourceTree = "<group>"; };
+		B10793191CE81CFD00E0F1F8 /* SHLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHLeftViewController.xib; sourceTree = "<group>"; };
+		B107931C1CE870C800E0F1F8 /* SHRightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHRightViewController.h; sourceTree = "<group>"; };
+		B107931D1CE870C800E0F1F8 /* SHRightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHRightViewController.m; sourceTree = "<group>"; };
+		B107931E1CE870C800E0F1F8 /* SHRightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHRightViewController.xib; sourceTree = "<group>"; };
+		B1E0E6051CEB6E3A0094E9B5 /* SHHomeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHHomeCollectionViewController.h; sourceTree = "<group>"; };
+		B1E0E6061CEB6E3A0094E9B5 /* SHHomeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHHomeCollectionViewController.m; sourceTree = "<group>"; };
+		B1E0E6071CEB6E3A0094E9B5 /* SHHomeCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHHomeCollectionViewController.xib; sourceTree = "<group>"; };
+		B1F788051CE5AC2500C11097 /* SuperDownLoad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperDownLoad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F788091CE5AC2500C11097 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1F7880B1CE5AC2500C11097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1F7880C1CE5AC2500C11097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1F788151CE5AC2500C11097 /* SuperDownLoad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SuperDownLoad.xcdatamodel; sourceTree = "<group>"; };
+		B1F7881C1CE5AC2500C11097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F788211CE5AC2500C11097 /* SuperDownLoadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDownLoadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F788251CE5AC2500C11097 /* SuperDownLoadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDownLoadTests.m; sourceTree = "<group>"; };
+		B1F788271CE5AC2500C11097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F7882C1CE5AC2500C11097 /* SuperDownLoadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperDownLoadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1F788301CE5AC2500C11097 /* SuperDownLoadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperDownLoadUITests.m; sourceTree = "<group>"; };
+		B1F788321CE5AC2500C11097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F7883E1CE5E5F000C11097 /* SuperDownLoad.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperDownLoad.pch; sourceTree = "<group>"; };
+		B1F789001CE6060D00C11097 /* Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Single.h; sourceTree = "<group>"; };
+		B1F789011CE6132700C11097 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		C3501BD8E0FA873217DBD34A /* Pods-SuperDownLoad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperDownLoad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperDownLoad/Pods-SuperDownLoad.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1F788021CE5AC2500C11097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F789021CE6132700C11097 /* libz.1.2.5.tbd in Frameworks */,
+				7EFA1A85B010B8144B41B132 /* libPods-SuperDownLoad.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F7881E1CE5AC2500C11097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F788291CE5AC2500C11097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47C97733268400E94EF4227B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3501BD8E0FA873217DBD34A /* Pods-SuperDownLoad.debug.xcconfig */,
+				28DC8B1C76F16CD5C0F2CAC5 /* Pods-SuperDownLoad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B10792ED1CE801DD00E0F1F8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B10792EE1CE801DD00E0F1F8 /* Encryption */,
+				B10792F51CE801DD00E0F1F8 /* NSString+HomeDir */,
+				B10792F81CE801DD00E0F1F8 /* SuperDownLoad */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		B10792EE1CE801DD00E0F1F8 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				B10792EF1CE801DD00E0F1F8 /* EncryptionTools.h */,
+				B10792F01CE801DD00E0F1F8 /* EncryptionTools.m */,
+				B10792F11CE801DD00E0F1F8 /* NSString+Hash.h */,
+				B10792F21CE801DD00E0F1F8 /* NSString+Hash.m */,
+				B10792F31CE801DD00E0F1F8 /* RSACryptor.h */,
+				B10792F41CE801DD00E0F1F8 /* RSACryptor.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		B10792F51CE801DD00E0F1F8 /* NSString+HomeDir */ = {
+			isa = PBXGroup;
+			children = (
+				B10792F61CE801DD00E0F1F8 /* NSString+HomeDir.h */,
+				B10792F71CE801DD00E0F1F8 /* NSString+HomeDir.m */,
+			);
+			path = "NSString+HomeDir";
+			sourceTree = "<group>";
+		};
+		B10792F81CE801DD00E0F1F8 /* SuperDownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				B10792F91CE801DD00E0F1F8 /* SHSuperDownLoad.h */,
+				B10792FA1CE801DD00E0F1F8 /* SHSuperDownLoad.m */,
+			);
+			path = SuperDownLoad;
+			sourceTree = "<group>";
+		};
+		B10793001CE805C100E0F1F8 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				B10793011CE805C100E0F1F8 /* Controller */,
+				B10793041CE805C100E0F1F8 /* Model */,
+				B10793051CE805C100E0F1F8 /* View */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		B10793011CE805C100E0F1F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10793021CE805C100E0F1F8 /* NewViewController.h */,
+				B10793031CE805C100E0F1F8 /* NewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B10793041CE805C100E0F1F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B10793051CE805C100E0F1F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B10793061CE805C100E0F1F8 /* PageCollectionViewCell.h */,
+				B10793071CE805C100E0F1F8 /* PageCollectionViewCell.m */,
+				B10793081CE805C100E0F1F8 /* PageCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1F787FC1CE5AC2500C11097 = {
+			isa = PBXGroup;
+			children = (
+				B1F789011CE6132700C11097 /* libz.1.2.5.tbd */,
+				B1F788071CE5AC2500C11097 /* SuperDownLoad */,
+				B1F788241CE5AC2500C11097 /* SuperDownLoadTests */,
+				B1F7882F1CE5AC2500C11097 /* SuperDownLoadUITests */,
+				B1F788061CE5AC2500C11097 /* Products */,
+				47C97733268400E94EF4227B /* Pods */,
+				E23E4FEDCE380330A312D2A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1F788061CE5AC2500C11097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1F788051CE5AC2500C11097 /* SuperDownLoad.app */,
+				B1F788211CE5AC2500C11097 /* SuperDownLoadTests.xctest */,
+				B1F7882C1CE5AC2500C11097 /* SuperDownLoadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1F788071CE5AC2500C11097 /* SuperDownLoad */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7883F1CE5FBB900C11097 /* Classes */,
+				B1F7880B1CE5AC2500C11097 /* AppDelegate.h */,
+				B1F7880C1CE5AC2500C11097 /* AppDelegate.m */,
+				B1F7883E1CE5E5F000C11097 /* SuperDownLoad.pch */,
+				B10793151CE8106A00E0F1F8 /* Asset.xcassets */,
+				B1F788081CE5AC2500C11097 /* Supporting Files */,
+			);
+			path = SuperDownLoad;
+			sourceTree = "<group>";
+		};
+		B1F788081CE5AC2500C11097 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B10793131CE80B5D00E0F1F8 /* download-complete.wav */,
+				B10793121CE80A4A00E0F1F8 /* photoShutter.caf */,
+				B107930E1CE8090800E0F1F8 /* loadFailPage.html */,
+				B107930C1CE8083300E0F1F8 /* errcode.plist */,
+				B1F789001CE6060D00C11097 /* Single.h */,
+				B1F7881C1CE5AC2500C11097 /* Info.plist */,
+				B1F788091CE5AC2500C11097 /* main.m */,
+				B1F788141CE5AC2500C11097 /* SuperDownLoad.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1F788241CE5AC2500C11097 /* SuperDownLoadTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F788251CE5AC2500C11097 /* SuperDownLoadTests.m */,
+				B1F788271CE5AC2500C11097 /* Info.plist */,
+			);
+			path = SuperDownLoadTests;
+			sourceTree = "<group>";
+		};
+		B1F7882F1CE5AC2500C11097 /* SuperDownLoadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1F788301CE5AC2500C11097 /* SuperDownLoadUITests.m */,
+				B1F788321CE5AC2500C11097 /* Info.plist */,
+			);
+			path = SuperDownLoadUITests;
+			sourceTree = "<group>";
+		};
+		B1F7883F1CE5FBB900C11097 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B10793001CE805C100E0F1F8 /* New */,
+				B10792ED1CE801DD00E0F1F8 /* Tools */,
+				B1F7884B1CE5FBB900C11097 /* HomePage */,
+				B1F7884F1CE5FBB900C11097 /* Left_Controller */,
+				B1F788531CE5FBB900C11097 /* Right_Controller */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B1F7884B1CE5FBB900C11097 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				B1F7884C1CE5FBB900C11097 /* Controller */,
+				B1F7884D1CE5FBB900C11097 /* Model */,
+				B1F7884E1CE5FBB900C11097 /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		B1F7884C1CE5FBB900C11097 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1E0E6051CEB6E3A0094E9B5 /* SHHomeCollectionViewController.h */,
+				B1E0E6061CEB6E3A0094E9B5 /* SHHomeCollectionViewController.m */,
+				B1E0E6071CEB6E3A0094E9B5 /* SHHomeCollectionViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1F7884D1CE5FBB900C11097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1F7884E1CE5FBB900C11097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1F7884F1CE5FBB900C11097 /* Left_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1F788501CE5FBB900C11097 /* Controller */,
+				B1F788511CE5FBB900C11097 /* Model */,
+				B1F788521CE5FBB900C11097 /* View */,
+			);
+			path = Left_Controller;
+			sourceTree = "<group>";
+		};
+		B1F788501CE5FBB900C11097 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10793171CE81CFD00E0F1F8 /* SHLeftViewController.h */,
+				B10793181CE81CFD00E0F1F8 /* SHLeftViewController.m */,
+				B10793191CE81CFD00E0F1F8 /* SHLeftViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1F788511CE5FBB900C11097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1F788521CE5FBB900C11097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B1F788531CE5FBB900C11097 /* Right_Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1F788541CE5FBB900C11097 /* Controller */,
+				B1F788551CE5FBB900C11097 /* Model */,
+				B1F788561CE5FBB900C11097 /* View */,
+			);
+			path = Right_Controller;
+			sourceTree = "<group>";
+		};
+		B1F788541CE5FBB900C11097 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B107931C1CE870C800E0F1F8 /* SHRightViewController.h */,
+				B107931D1CE870C800E0F1F8 /* SHRightViewController.m */,
+				B107931E1CE870C800E0F1F8 /* SHRightViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1F788551CE5FBB900C11097 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1F788561CE5FBB900C11097 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E23E4FEDCE380330A312D2A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E05724AD5CA23AECE01A3E4 /* libPods-SuperDownLoad.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1F788041CE5AC2500C11097 /* SuperDownLoad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F788351CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoad" */;
+			buildPhases = (
+				CDA0825655CCCA35FB57714B /* 📦 Check Pods Manifest.lock */,
+				B1F788011CE5AC2500C11097 /* Sources */,
+				B1F788021CE5AC2500C11097 /* Frameworks */,
+				B1F788031CE5AC2500C11097 /* Resources */,
+				00463DDCB0E74EB87077A511 /* 📦 Embed Pods Frameworks */,
+				13EA98A96C8F83A56BB7B240 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperDownLoad;
+			productName = SuperDownLoad;
+			productReference = B1F788051CE5AC2500C11097 /* SuperDownLoad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1F788201CE5AC2500C11097 /* SuperDownLoadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F788381CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoadTests" */;
+			buildPhases = (
+				B1F7881D1CE5AC2500C11097 /* Sources */,
+				B1F7881E1CE5AC2500C11097 /* Frameworks */,
+				B1F7881F1CE5AC2500C11097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1F788231CE5AC2500C11097 /* PBXTargetDependency */,
+			);
+			name = SuperDownLoadTests;
+			productName = SuperDownLoadTests;
+			productReference = B1F788211CE5AC2500C11097 /* SuperDownLoadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1F7882B1CE5AC2500C11097 /* SuperDownLoadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1F7883B1CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoadUITests" */;
+			buildPhases = (
+				B1F788281CE5AC2500C11097 /* Sources */,
+				B1F788291CE5AC2500C11097 /* Frameworks */,
+				B1F7882A1CE5AC2500C11097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1F7882E1CE5AC2500C11097 /* PBXTargetDependency */,
+			);
+			name = SuperDownLoadUITests;
+			productName = SuperDownLoadUITests;
+			productReference = B1F7882C1CE5AC2500C11097 /* SuperDownLoadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1F787FD1CE5AC2500C11097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SH;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "ZHANGHAI SHENG";
+				TargetAttributes = {
+					B1F788041CE5AC2500C11097 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B1F788201CE5AC2500C11097 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B1F788041CE5AC2500C11097;
+					};
+					B1F7882B1CE5AC2500C11097 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B1F788041CE5AC2500C11097;
+					};
+				};
+			};
+			buildConfigurationList = B1F788001CE5AC2500C11097 /* Build configuration list for PBXProject "SuperDownLoad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1F787FC1CE5AC2500C11097;
+			productRefGroup = B1F788061CE5AC2500C11097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1F788041CE5AC2500C11097 /* SuperDownLoad */,
+				B1F788201CE5AC2500C11097 /* SuperDownLoadTests */,
+				B1F7882B1CE5AC2500C11097 /* SuperDownLoadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1F788031CE5AC2500C11097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B107930F1CE8090800E0F1F8 /* loadFailPage.html in Resources */,
+				B10793161CE8106A00E0F1F8 /* Asset.xcassets in Resources */,
+				B1E0E6091CEB6E3A0094E9B5 /* SHHomeCollectionViewController.xib in Resources */,
+				B107930B1CE805C100E0F1F8 /* PageCollectionViewCell.xib in Resources */,
+				B107930D1CE8083300E0F1F8 /* errcode.plist in Resources */,
+				B10793201CE870C800E0F1F8 /* SHRightViewController.xib in Resources */,
+				B107931B1CE81CFD00E0F1F8 /* SHLeftViewController.xib in Resources */,
+				B10793141CE80B5D00E0F1F8 /* download-complete.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F7881F1CE5AC2500C11097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F7882A1CE5AC2500C11097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00463DDCB0E74EB87077A511 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperDownLoad/Pods-SuperDownLoad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13EA98A96C8F83A56BB7B240 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SuperDownLoad/Pods-SuperDownLoad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDA0825655CCCA35FB57714B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1F788011CE5AC2500C11097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E0E6081CEB6E3A0094E9B5 /* SHHomeCollectionViewController.m in Sources */,
+				B10792FE1CE801DD00E0F1F8 /* NSString+HomeDir.m in Sources */,
+				B10792FC1CE801DD00E0F1F8 /* NSString+Hash.m in Sources */,
+				B107931F1CE870C800E0F1F8 /* SHRightViewController.m in Sources */,
+				B1F788161CE5AC2500C11097 /* SuperDownLoad.xcdatamodeld in Sources */,
+				B107930A1CE805C100E0F1F8 /* PageCollectionViewCell.m in Sources */,
+				B10792FB1CE801DD00E0F1F8 /* EncryptionTools.m in Sources */,
+				B107931A1CE81CFD00E0F1F8 /* SHLeftViewController.m in Sources */,
+				B1F7880D1CE5AC2500C11097 /* AppDelegate.m in Sources */,
+				B10792FF1CE801DD00E0F1F8 /* SHSuperDownLoad.m in Sources */,
+				B10793091CE805C100E0F1F8 /* NewViewController.m in Sources */,
+				B10792FD1CE801DD00E0F1F8 /* RSACryptor.m in Sources */,
+				B1F7880A1CE5AC2500C11097 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F7881D1CE5AC2500C11097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F788261CE5AC2500C11097 /* SuperDownLoadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1F788281CE5AC2500C11097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F788311CE5AC2500C11097 /* SuperDownLoadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1F788231CE5AC2500C11097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1F788041CE5AC2500C11097 /* SuperDownLoad */;
+			targetProxy = B1F788221CE5AC2500C11097 /* PBXContainerItemProxy */;
+		};
+		B1F7882E1CE5AC2500C11097 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1F788041CE5AC2500C11097 /* SuperDownLoad */;
+			targetProxy = B1F7882D1CE5AC2500C11097 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B1F788331CE5AC2500C11097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1F788341CE5AC2500C11097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1F788361CE5AC2500C11097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3501BD8E0FA873217DBD34A /* Pods-SuperDownLoad.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SuperDownLoad/SuperDownLoad.pch;
+				INFOPLIST_FILE = SuperDownLoad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1F788371CE5AC2500C11097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DC8B1C76F16CD5C0F2CAC5 /* Pods-SuperDownLoad.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SuperDownLoad/SuperDownLoad.pch;
+				INFOPLIST_FILE = SuperDownLoad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B1F788391CE5AC2500C11097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SuperDownLoadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDownLoad.app/SuperDownLoad";
+			};
+			name = Debug;
+		};
+		B1F7883A1CE5AC2500C11097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SuperDownLoadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperDownLoad.app/SuperDownLoad";
+			};
+			name = Release;
+		};
+		B1F7883C1CE5AC2500C11097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SuperDownLoadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SuperDownLoad;
+			};
+			name = Debug;
+		};
+		B1F7883D1CE5AC2500C11097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SuperDownLoadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-18608950906.SuperDownLoadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SuperDownLoad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1F788001CE5AC2500C11097 /* Build configuration list for PBXProject "SuperDownLoad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F788331CE5AC2500C11097 /* Debug */,
+				B1F788341CE5AC2500C11097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F788351CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F788361CE5AC2500C11097 /* Debug */,
+				B1F788371CE5AC2500C11097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F788381CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F788391CE5AC2500C11097 /* Debug */,
+				B1F7883A1CE5AC2500C11097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1F7883B1CE5AC2500C11097 /* Build configuration list for PBXNativeTarget "SuperDownLoadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F7883C1CE5AC2500C11097 /* Debug */,
+				B1F7883D1CE5AC2500C11097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B1F788141CE5AC2500C11097 /* SuperDownLoad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B1F788151CE5AC2500C11097 /* SuperDownLoad.xcdatamodel */,
+			);
+			currentVersion = B1F788151CE5AC2500C11097 /* SuperDownLoad.xcdatamodel */;
+			path = SuperDownLoad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B1F787FD1CE5AC2500C11097 /* Project object */;
+}
